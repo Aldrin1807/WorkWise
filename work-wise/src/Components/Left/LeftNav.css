@@ -1,0 +1,39 @@
+.left-nav{
+    background-color: white;
+    width: 7.5rem;
+    height: 52.188rem;
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 2rem;
+    color: gray;
+    text-align: center;
+}
+
+.box:nth-child(2){
+    height: 20rem;
+    justify-content: space-between;
+}
+
+
+.selected:nth-child(1){
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
+    color: white;
+    padding-top: 1rem;
+}
