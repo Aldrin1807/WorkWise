@@ -1,0 +1,110 @@
+
+.right-nav{
+    background-color: white;
+    width: 21.313rem;
+    height: 52.188rem;
+    margin-top: 25px;
+    border-radius: 2rem;
+
+}
+.profile-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5em;
+}
+.profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+}
+.profile-card ul{
+    list-style: none;
+    margin-left: -30px;
+    margin-top: -5px;
+}
+.info:nth-child(1){
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: #0F3F62;
+}
+.info:nth-child(2){
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #8695A0;
+}
+.h-text{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #0F3F62;
+}
+.p-text{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #0F3F62;
+}
+.nav-items{
+    padding: 2rem;
+}
+
+.type{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: -2.9rem;
+}
+.text{
+    width: 13rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+
+    color: #0F3F62;
+
+    opacity: 0.5;
+}
+.checkbox{
+    width: 23px;
+    height: 21px;
+    background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
+    border-radius: 5px;
+}
+.select-dropdown{
+    width: 17.4rem;
+    height: 2rem;
+    border: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+
+    color: #0F3F62;
+
+    opacity: 0.5;
+}
+
+.num-jobs{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #0F3F62;
+    opacity: 0.5;
+}
