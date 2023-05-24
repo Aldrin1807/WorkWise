@@ -25,9 +25,7 @@
     height: 20rem;
     justify-content: space-between;
 }
-
-
-.selected:nth-child(1){
+.selected{
     text-align: center;
     width: 60px;
     height: 50px;

@@ -1,14 +1,20 @@
 
 import './App.css'
-import LeftNav from './Components/Left/LeftNav'
-import RightNav from './Components/Right/RightNav'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import JobPage from './Pages/JobPage/JobPage';
+import JobSearch from './Pages/JobSearch/JobSearch';
 
 function App() {
 
   return (
     <div className='content'>
-      <LeftNav />
-      <RightNav />
+      <BrowserRouter>
+          <Routes>   
+          <Route index element={<JobSearch />} />
+          <Route path="job-page" element={<JobPage />} />
+          <Route path="job-search" element={<JobSearch />} />
+         </Routes>
+    </BrowserRouter>
     </div>
   )
 }
