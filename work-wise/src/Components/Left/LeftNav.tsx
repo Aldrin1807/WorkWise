@@ -1,16 +1,17 @@
 import './LeftNav.css'
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoBriefcaseOutline } from "react-icons/io5";
-import {AiFillStar} from "react-icons/ai"
 import { IoSend } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
 import { FiLogOut } from "react-icons/fi";
 import { useState } from 'react';
 
-function LeftNav(){
-    const [selectedIcon, setSelectedIcon] = useState('briefcase');
+function LeftNav(props:any){
+    const [selectedIcon, setSelectedIcon] = useState(props.icon);
 
-    const handleIconClick = (icon:any) => {
+
+    const handleIconClick = (icon:any,location:any) => {
+      window.location.href = `/${location}`
       setSelectedIcon(icon);
     };
   
@@ -20,16 +21,13 @@ function LeftNav(){
           <RiMenu5Fill />
         </div>
         <div className="box">
-          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} onClick={() => handleIconClick('briefcase')}>
+          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} onClick={() => handleIconClick('briefcase','job-search')}>
             <IoBriefcaseOutline />
           </div>
-          <div className={selectedIcon === 'star' ? 'selected' : ''} onClick={() => handleIconClick('star')}>
-            <AiFillStar />
-          </div>
-          <div className={selectedIcon === 'send' ? 'selected' : ''} onClick={() => handleIconClick('send')}>
+          <div className={selectedIcon === 'send' ? 'selected' : ''} onClick={() => handleIconClick('send','sent')}>
             <IoSend />
           </div>
-          <div className={selectedIcon === 'settings' ? 'selected' : ''} onClick={() => handleIconClick('settings')}>
+          <div className={selectedIcon === 'settings' ? 'selected' : ''} onClick={() => handleIconClick('settings','settings')}>
             <IoMdSettings />
           </div>
         </div>

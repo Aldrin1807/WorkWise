@@ -111,3 +111,78 @@ color: #0F3F62;
     font-size: 2rem;
     color: #0F3F62;
 }
+.profile-content{
+    padding: 2rem;
+    width: 100%;
+}
+.photo-and-name{
+    display: flex;
+
+    width: 53rem;
+    justify-content: center;
+    align-items: center;
+}
+.photo-and-name img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5%;
+}
+.listat ul{
+    list-style: none;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.save-butoni{
+    background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: white;
+    border: none;
+}
+.experience{
+    
+    width: 51.3rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+
+    color: #0F3F62;
+}
+.experience-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+#first{
+    margin-top: 4rem;
+}
+.add-butoni{
+    background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 31px;
+    color: white;
+    border: none;
+}

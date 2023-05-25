@@ -57,3 +57,6 @@ color: #8695A0;
      background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
      color: white;
 }
+.container-3 ul li:nth-child(5){
+   border: none;
+}

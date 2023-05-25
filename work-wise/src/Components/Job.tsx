@@ -1,8 +1,12 @@
 import './Job.css'
 
 function Job(props:any){
+    function redirectToJobPage() {
+        window.location.href = "/job-page";
+      }
+      
     return(
-        <div className='job-card' id={props.jobpage ? 'job-page-card' : ''}>
+        <div className='job-card' id={props.jobpage ? 'job-page-card' : ''} onClick={redirectToJobPage}>
             <img src="https://image-placeholder.com/images/actual-size/57x57.png" alt="" />
             <div className='lists'>
              <ul>

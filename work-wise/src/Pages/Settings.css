@@ -1,0 +1,36 @@
+.contenti{
+    background-color: white;
+    border-radius: 14px;
+    width: 80%;
+
+    height:33rem;
+    margin: 0 auto;
+    display: flex;
+}
+.list{
+    list-style: none;
+    border-right: 1px solid #ccc;
+    width: 12rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    color: #0F3F62;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.list li{
+    cursor: pointer;
+}
+.active{
+    background: linear-gradient(209.98deg, #7957F3 12.1%, #8F70FF 100.71%);
+    width: 7rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 14px;
+}

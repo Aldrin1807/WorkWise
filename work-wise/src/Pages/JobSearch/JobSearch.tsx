@@ -10,7 +10,7 @@ function JobSearch(){
     
     return(
         <>
-        <LeftNav />
+        <LeftNav icon={'briefcase'}/>
 
             <div className="container">
                <Search />

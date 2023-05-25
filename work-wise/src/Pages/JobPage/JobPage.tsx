@@ -8,7 +8,7 @@ import './JobPage.css'
 function JobPage(){
     return(
     <>
-        <LeftNav />
+        <LeftNav icon={'briefcase'} />
 
             <div className='container'>
                 <Search job={true} />
