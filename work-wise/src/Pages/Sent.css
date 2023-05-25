@@ -1,0 +1,26 @@
+.primary{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #0F3F62;
+}
+.sent-content{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#first{
+    margin-top: 3rem;
+}
