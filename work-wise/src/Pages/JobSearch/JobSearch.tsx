@@ -23,6 +23,17 @@ function JobSearch(){
                  <Job />
                  <Job />
                  <Job />
+                 <div className='container-3'>
+                    <ul>
+                        <li>{'<'}</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>{'...'}</li>
+                        <li>10</li>
+                        <li>{'>'}</li>
+                    </ul>
+               </div>
                </div>
             </div>
 

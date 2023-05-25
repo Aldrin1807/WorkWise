@@ -1,6 +1,7 @@
+import { IoMdArrowBack } from 'react-icons/io';
 import './Content.css'
 
-export function Search(){
+export function Search(props:any){
     const cities = [
         'Prishtina',
         'Prizren',
@@ -35,6 +36,11 @@ export function Search(){
       ];
     return (
         <div className='title-n-search'>
+            {props.job?(
+                <div className='back-icon'>
+                <IoMdArrowBack  />
+                </div>
+            ):(null)}
         <h1 className='title-text'>WorkWise</h1>
         <div className="has-search">
         <span className="fa fa-search form-control-feedback" />

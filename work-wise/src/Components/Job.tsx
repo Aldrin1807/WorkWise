@@ -1,8 +1,8 @@
 import './Job.css'
 
-function Job(){
+function Job(props:any){
     return(
-        <div className='job-card'>
+        <div className='job-card' id={props.jobpage ? 'job-page-card' : ''}>
             <img src="https://image-placeholder.com/images/actual-size/57x57.png" alt="" />
             <div className='lists'>
              <ul>

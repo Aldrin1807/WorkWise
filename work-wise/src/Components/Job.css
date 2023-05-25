@@ -1,11 +1,20 @@
 .job-card{
-    width: 50rem;
+    width: 80%;
     height: 5.625rem;
     background: #FFFFFF;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
     padding: 1rem;
+}
+#job-page-card{
+    background: linear-gradient(90deg, #9175F9 0%, #4C30B2 100%);
+    border-radius: 20px;
+}
+#job-page-card .primary-text{
+    color: white;
+}
+#job-page-card .secondary-text{
+    color: #C4C4C4;
 }
 .job-card ul{
     list-style: none;
@@ -36,6 +45,9 @@ color: #8695A0;
     width: 50rem;
     justify-content: space-between;
     align-items: center;
+}
+.lists:nth-child(2){
+    width: 64rem;
 }
 .job-card img{
     width: 5rem;
