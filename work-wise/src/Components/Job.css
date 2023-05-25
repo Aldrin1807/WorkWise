@@ -1,0 +1,45 @@
+.job-card{
+    width: 50rem;
+    height: 5.625rem;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.job-card ul{
+    list-style: none;
+
+}
+.primary-text{
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+
+color: #0F3F62;
+}
+.secondary-text{
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #8695A0;
+}
+.lists{
+    display: flex;
+    justify-content: flex-start;
+    width: 50rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.job-card img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin-right: -20px;
+}
