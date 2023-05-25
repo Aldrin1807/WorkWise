@@ -1,5 +1,6 @@
 import { IoMdArrowBack } from 'react-icons/io';
 import './Content.css'
+import { CiCircleRemove } from 'react-icons/ci';
 
 export function Search(props:any){
     const cities = [
@@ -82,7 +83,7 @@ export function Profile(){
                 </div>
             </div>
             <div className="about"> 
-                <h3>About You</h3>
+                <h3 className='primary'>About You</h3>
                 <textarea className='about-me-area' id="" cols={80} rows={10}></textarea>
                 <button className='save-butoni'>Save Changes</button>
             </div>
@@ -96,7 +97,9 @@ export function Experience(){
             <h3>Please tell us about your work experience</h3>
             <hr />
             <div className="experience-item" id='first'>
-                <p className='primary-text'>Apple</p>
+                <CiCircleRemove className="remove" />
+                <p className='primary-text'>
+                Apple</p>
                 <p className="primary-text">Software Developer</p>
                 <p className="secondary-text">Start Date: 19.05.2020</p>
                 <p className="secondary-text">End Date: 10.06.2021</p>
@@ -112,13 +115,18 @@ export function Education(){
         <h3>Please tell us about your Education</h3>
         <hr />
         <div className="experience-item" id='first'>
-            <p className='primary-text'>UBT</p>
+
+            <p className='primary-text'>
+            
+            UBT</p>
             <p className="primary-text">Computer Science and Engineering</p>
             <p className="secondary-text">Start Date: 19.05.2020</p>
             <p className="secondary-text">End Date: 10.06.2021</p>
         </div>
         <div className="experience-item">
-            <p className='primary-text'>SHFMU "Bafti Haxhiu"</p>
+          
+            <p className='primary-text'>
+            SHFMU "Bafti Haxhiu"</p>
             <p className="primary-text">Natural Science</p>
             <p className="secondary-text">Start Date: 19.05.2020</p>
             <p className="secondary-text">End Date: 10.06.2021</p>
@@ -134,18 +142,22 @@ export function Skills(){
         <h3>Please tell us about your Skills</h3>
         <hr />
         <div className="experience-item" id='first'>
+   
             <p className='primary-text'>Advanced Java</p>
             <p className="secondary-text">Remove</p>
         </div>
         <div className="experience-item">
+      
         <p className='primary-text'>Advanced C# Programming</p>
             <p className="secondary-text">Remove</p>
         </div>
         <div className="experience-item">
+    
              <p className='primary-text'>HTML CSS JS</p>
              <p className="secondary-text">Remove</p>
         </div>
         <div className="experience-item">
+     
              <p className='primary-text'>ASP.Net Core</p>
              <p className="secondary-text">Remove</p>
         </div>

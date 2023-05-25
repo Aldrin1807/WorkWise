@@ -85,7 +85,12 @@ letter-spacing: 0.02em;
 
 color: #0A043C;
   }
- 
+  .remove{
+    font-size: 2rem;
+    margin-right: -7rem;
+    color: #0F3F62;
+}
+
 .title-n-search{
     display: flex;
     align-items: center;

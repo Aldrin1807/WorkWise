@@ -5,7 +5,7 @@ import RightNav from "../Components/Right/RightNav";
 import './Settings.css'
 
 export default function Settings(){
-    const [content,setContent] = useState(1);
+    const [content,setContent] = useState(0);
     const handleNavClick = (index:any) => {
         setContent(index);
     };

@@ -8,6 +8,11 @@
     text-align: center;
     color: #0F3F62;
 }
+.remove-icon{
+    font-size: 2rem;
+    margin-right: -14rem;
+    color: #0F3F62;
+}
 .sent-content{
     background-color: white;
     width: 80%;
