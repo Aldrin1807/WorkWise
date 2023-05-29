@@ -5,7 +5,7 @@ import RightNav from '../../Components/Right/RightNav'
 import './JobPage.css'
 
 
-function JobPage(){
+function JobPage(props:any){
     return(
     <>
         <LeftNav icon={'briefcase'} />

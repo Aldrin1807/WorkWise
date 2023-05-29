@@ -2,7 +2,7 @@
 import './RightNav.css'
 import 'typeface-dm-sans';
 
-function RightNav(){
+function RightNav(props:any){
     const categories = [
         'Engineering',
         'Design',
@@ -17,13 +17,18 @@ function RightNav(){
     
     return (
         <div className='right-nav'>
-            <div className='profile-card'>
+            {props.logged==0?(
+                 null
+            ):(
+                <div className='profile-card'>
                 <img src="https://image-placeholder.com/images/actual-size/57x57.png" alt="" className='profile-image' />   
                 <ul >
                     <li className='info'>Aldrin Islami</li>
                     <li className='info'>Job Seeker</li>
                 </ul>
             </div>
+            )}
+           
             <div className='nav-items'>
             <h1 className='h-text'>Filter</h1>
                 <hr />

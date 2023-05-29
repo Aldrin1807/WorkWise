@@ -6,6 +6,11 @@ import { IoMdSettings } from "react-icons/io";
 import { FiLogOut } from "react-icons/fi";
 import { useState } from 'react';
 import { CiUser } from 'react-icons/ci';
+import { Button, Modal, TextField } from '@mui/material';
+// Importing all styles
+import '@mui/material/styles';
+
+
 
 function LeftNav(props:any){
     const [selectedIcon, setSelectedIcon] = useState(props.icon);
@@ -18,7 +23,8 @@ function LeftNav(props:any){
       window.location.href = `/${location}`
       setSelectedIcon(icon);
     };
-  
+    
+    const [showModal,setShowModal] = useState(false);
     return (
       <div className="left-nav">
         <div className="box">
@@ -44,7 +50,7 @@ function LeftNav(props:any){
         </div>
         </div>):null}
         {loggedin=='2'?(<div className="box">
-          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} onClick={() => handleIconClick('briefcase','job-search')}>
+          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} onClick={() => setShowModal(!showModal)}>
           <IoBriefcaseOutline />
         </div>
         <div className={selectedIcon === 'send' ? 'selected' : ''} onClick={() => handleIconClick('send','sent')}>
@@ -58,6 +64,47 @@ function LeftNav(props:any){
         <div className="box">
           {(loggedin=='1'||logged=='2')?(<FiLogOut onClick={()=>setLoggedin('0')} />):(<CiUser onClick={()=>{window.location.href='login'}} />)}
         </div>
+        <Modal open={showModal} onClose={() => setShowModal(!showModal)}>
+        <div className="modal-content">
+          <h2>Add a Job</h2>
+          <form className='forma-add' >
+          <TextField
+            label="Job Title"
+            required
+            className='inputs'
+          />
+          <TextField
+            label="Job Salary"
+            required
+            className='inputs'
+          />
+          <TextField
+            label="Job Description"
+            multiline
+            rows={7}
+            required
+            className='inputs'
+          />
+          <TextField
+            label="Valid Date"
+            type="date"
+            required
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+            <div className="modal-actions">
+              <Button variant="contained" onClick={() => setShowModal(!showModal)}>
+                Cancel
+              </Button>
+              <Button variant="contained" type="submit">
+                Add
+              </Button>
+            </div>
+          </form>
+        </div>
+      </Modal>
+      
       </div>
     );
 }

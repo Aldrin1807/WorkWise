@@ -29,3 +29,9 @@
 #first{
     margin-top: 3rem;
 }
+#accordions{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}

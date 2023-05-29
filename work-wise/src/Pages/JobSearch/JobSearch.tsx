@@ -6,7 +6,7 @@ import './JobSearch.css'
 
 
 
-function JobSearch(){
+function JobSearch(props:any){
     
     return(
         <>
@@ -37,7 +37,7 @@ function JobSearch(){
                </div>
             </div>
 
-        <RightNav />
+        <RightNav logged={props.logged} />
         </>
     )
 }
