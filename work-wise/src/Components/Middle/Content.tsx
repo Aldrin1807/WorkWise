@@ -1,6 +1,7 @@
 import { IoMdArrowBack } from 'react-icons/io';
 import './Content.css'
 import { CiCircleRemove } from 'react-icons/ci';
+import { FiEdit2 } from 'react-icons/fi';
 
 export function Search(props:any){
     const cities = [
@@ -73,12 +74,12 @@ export function Profile(){
                 <img src="https://image-placeholder.com/images/actual-size/75x75.png" alt="" />
                 <div className='listat'>
                 <ul>
-                    <li className='primary-text'>First and LastName</li>
-                    <li className='secondary-text'>Aldrin Islami</li>
+                    <li className='primary-text'>First and LastName </li>
+                    <li className='secondary-text'>Aldrin Islami <FiEdit2 /></li>
                 </ul>
                 <ul>
-                    <li className='primary-text'>Email</li>
-                    <li className='secondary-text'>aldrin@gmail.com</li>
+                    <li className='primary-text'>Email </li>
+                    <li className='secondary-text'>aldrin@gmail.com <FiEdit2 /></li>
                 </ul>
                 </div>
             </div>

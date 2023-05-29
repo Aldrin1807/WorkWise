@@ -16,7 +16,7 @@ function JobSearch(){
                <Search />
                 <div className='container-1'>
                <h2 className='h2-text'>Results displayed after filtering</h2>
-               <p className='p-text'>All posted 1 Week ago</p>
+               <p className='p-text'>lorem ipsum</p>
                </div>
                <div className='container-2'>
                  <Job />

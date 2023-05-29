@@ -19,8 +19,8 @@ function JobPage(){
                     <p className="job-text">
                     Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.
                     </p>
-                    <h1 className='job-desc'>Apply Now</h1>
-                    <p className='job-text'>Please email a copy of your resume and online portfolio to: random@workwise.com </p>
+                    <button className='apply-button'>Apply now</button>
+                    <p className='job-text'>or email a copy of your resume and online portfolio to: random@workwise.com </p>
                     <p className='job-text'>CC random@workwise.com</p>
                 </div>
                 </div>
