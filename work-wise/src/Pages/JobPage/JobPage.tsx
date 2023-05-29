@@ -19,7 +19,12 @@ function JobPage(props:any){
                     <p className="job-text">
                     Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.
                     </p>
-                    <button className='apply-button'>Apply now</button>
+                    {props.logged==0?(
+                         <button className='apply-button-disabled'  >Apply now</button>
+                    ):(
+                        <button className='apply-button' >Apply now</button>
+                    )}
+                   
                     <p className='job-text'>or email a copy of your resume and online portfolio to: random@workwise.com </p>
                     <p className='job-text'>CC random@workwise.com</p>
                 </div>
@@ -27,7 +32,7 @@ function JobPage(props:any){
                 
             </div>
 
-        <RightNav />
+        <RightNav logged={props.logged} />
     </>
     )
 }

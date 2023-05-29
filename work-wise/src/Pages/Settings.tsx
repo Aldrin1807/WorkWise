@@ -33,7 +33,7 @@ export default function Settings(props:any){
             </div>
         </div>
         ):(
-            <div className="container">
+            <div className="container" id="employer">
             <div className="contenti">
                 <div className="left-side">
                     <ul className="list">
