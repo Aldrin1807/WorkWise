@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 import Job from '../../Components/Job'
 import LeftNav from '../../Components/Left/LeftNav'
 import { Search } from '../../Components/Middle/Content'
@@ -6,6 +7,13 @@ import './JobPage.css'
 
 
 function JobPage(props:any){
+    const handleApply = () => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Successfully Applied',
+          text: 'Your application has been submitted successfully.',
+        });
+      };
     return(
     <>
         <LeftNav icon={'briefcase'} />
@@ -22,7 +30,7 @@ function JobPage(props:any){
                     {props.logged==0?(
                          <button className='apply-button-disabled'  >Apply now</button>
                     ):(
-                        <button className='apply-button' >Apply now</button>
+                        <button className='apply-button' onClick={handleApply} >Apply now</button>
                     )}
                    
                     <p className='job-text'>or email a copy of your resume and online portfolio to: random@workwise.com </p>
