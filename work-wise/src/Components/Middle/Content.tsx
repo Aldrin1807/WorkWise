@@ -2,6 +2,7 @@ import { IoMdArrowBack } from 'react-icons/io';
 import './Content.css'
 import { CiCircleRemove } from 'react-icons/ci';
 import { FiEdit2 } from 'react-icons/fi';
+import { AiOutlineCloudUpload } from "react-icons/ai";
 
 export function Search(props:any){
     const cities = [
@@ -78,32 +79,30 @@ export function Profile(props:any){
                           <ul>
                           <li className='primary-text'>First and LastName </li>
                           <li className='secondary-text'>Aldrin Islami <FiEdit2 /></li>
+                          <li className='primary-text'>Email</li>
+                          <li className='secondary-text'>aldrin@gmail.com <FiEdit2 /></li>
+                          <li className='primary-text'>Upload CV here
+                          </li>
+                          <input id='cv' type="file"  hidden/>
+                          <label htmlFor="cv">
+                            <li style={{fontSize:'2rem'}}>  <AiOutlineCloudUpload /></li>
+
+                          </label>
                       </ul>
                       
                     ):(
                         <ul>
                         <li className='primary-text'>Company Name </li>
                         <li className='secondary-text'>Aldrin Inc. <FiEdit2 /></li>
-                    </ul>
-                    )}
-               {props.logged==1?(
-                          <ul>
-                          <li className='primary-text'>Email</li>
-                          <li className='secondary-text'>aldrin@gmail.com <FiEdit2 /></li>
-                      </ul>
-                      
-                    ):(
-                        <ul>
                         <li className='primary-text'>Email </li>
                         <li className='secondary-text'>AldrinInc@gmail.com <FiEdit2 /></li>
                         <li className='primary-text'>Other Info </li>
                         <li className='secondary-text'>test <FiEdit2 /></li>
                         <li className='primary-text'>Other Info </li>
                         <li className='secondary-text'>test <FiEdit2 /></li>
-                        
                     </ul>
                     )}
-               
+ 
                 </div>
             </div>
             <div className="about"> 

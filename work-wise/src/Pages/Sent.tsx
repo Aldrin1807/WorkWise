@@ -154,6 +154,10 @@ export default function Sent(props:any){
                       </ListItem>
                     ))}
                   </List>
+                  <Typography variant="h6" className='primary-text'>About </Typography>
+                  <Typography variant="body1" className='secondary-text'>About bla bla bla bla bla bla bla bla bla bla</Typography>
+
+
                   <Typography variant="h6" className='primary-text'><u> Click to see CV </u></Typography>
                 </div>
         </Modal>

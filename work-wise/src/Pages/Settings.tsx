@@ -25,7 +25,7 @@ export default function Settings(props:any){
                     </ul>
                 </div>
                 <div className="main-content">
-                {content === 0 && <Profile />}
+                {content === 0 && <Profile logged={props.logged} />}
                 {content === 1 && <Experience />}
                 {content === 2 && <Education />} 
                 {content === 3 && <Skills />}
