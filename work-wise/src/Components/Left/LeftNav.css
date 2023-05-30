@@ -13,6 +13,9 @@
     position: sticky;
     top: 25px;
 }
+#notLogged{
+  margin-top: 8rem;
+}
 
 .box{
     display: flex;

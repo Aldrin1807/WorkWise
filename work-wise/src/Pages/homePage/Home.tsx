@@ -13,7 +13,7 @@ function Home() {
           <h2 className="description">
            The Easiest Way to Get Your New Job
           </h2>
-          <h3 className="start-searching">Start searching now <AiOutlineArrowRight /> </h3>
+          <h3 className="start-searching" onClick={()=>window.location.href='/job-search'}>Start searching now <AiOutlineArrowRight /> </h3>
         </div>
         <h2 className="description">
            What do we offer?

@@ -35,7 +35,7 @@ export default function LeftNav(props:any){
           </div>
     
         {loggedin=='0'?( <div className="box">
-          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} onClick={() => handleIconClick('briefcase','job-search')}>
+          <div className={selectedIcon === 'briefcase' ? 'selected' : ''} id='notLogged' onClick={() => handleIconClick('briefcase','job-search')}>
           <IoBriefcaseOutline />
         </div>
         </div>):(null)}
