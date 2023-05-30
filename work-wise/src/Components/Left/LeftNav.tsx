@@ -6,7 +6,8 @@ import { IoMdSettings } from "react-icons/io";
 import { FiLogOut } from "react-icons/fi";
 import { useState } from 'react';
 
-function LeftNav(props:any){
+
+export default function LeftNav(props:any){
     const [selectedIcon, setSelectedIcon] = useState(props.icon);
 
 
@@ -37,4 +38,3 @@ function LeftNav(props:any){
       </div>
     );
 }
-export default LeftNav
