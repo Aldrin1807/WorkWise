@@ -29,3 +29,22 @@
 #first{
     margin-top: 3rem;
 }
+#accordions{
+   margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.modal-user{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#exp{
+    margin-top: 1rem;
+}

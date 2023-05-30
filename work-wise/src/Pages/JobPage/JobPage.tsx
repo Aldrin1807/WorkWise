@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 import Job from '../../Components/Job'
 import LeftNav from '../../Components/Left/LeftNav'
 import { Search } from '../../Components/Middle/Content'
@@ -5,7 +6,14 @@ import RightNav from '../../Components/Right/RightNav'
 import './JobPage.css'
 
 
-function JobPage(){
+function JobPage(props:any){
+    const handleApply = () => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Successfully Applied',
+          text: 'Your application has been submitted successfully.',
+        });
+      };
     return(
     <>
         <LeftNav icon={'briefcase'} />
@@ -19,15 +27,20 @@ function JobPage(){
                     <p className="job-text">
                     Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis. Morbi tempor pretium aliquam est vel. Interdum mi mauris netus amet lobortis in. Sed at eu sed sodales orci amet ac dis.
                     </p>
-                    <h1 className='job-desc'>Apply Now</h1>
-                    <p className='job-text'>Please email a copy of your resume and online portfolio to: random@workwise.com </p>
+                    {props.logged==0?(
+                         <button className='apply-button-disabled'  >Apply now</button>
+                    ):(
+                        <button className='apply-button' onClick={handleApply} >Apply now</button>
+                    )}
+                   
+                    <p className='job-text'>or email a copy of your resume and online portfolio to: random@workwise.com </p>
                     <p className='job-text'>CC random@workwise.com</p>
                 </div>
                 </div>
                 
             </div>
 
-        <RightNav />
+        <RightNav logged={props.logged} />
     </>
     )
 }
