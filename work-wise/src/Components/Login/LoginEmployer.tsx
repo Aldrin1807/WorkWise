@@ -73,7 +73,7 @@ export default function LoginEmployer() {
             <textarea
               id="description"
               name="description"
-               rows="4"
+              rows="4"
               cols="50"
               value={userData.Description}
               onChange={handleChange}
@@ -154,6 +154,7 @@ export default function LoginEmployer() {
         <p className="toggle-form" onClick={handleToggleForm}>
           {isRegister ? 'Already have an account? Login' : "Don't have an account? Register"}
         </p>
+       
       </form>
     </div>
   );
