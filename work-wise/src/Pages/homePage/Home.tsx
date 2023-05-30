@@ -1,65 +1,74 @@
+import { AiOutlineArrowRight } from "react-icons/ai";
 import LeftNav from "../../Components/Left/LeftNav";
-import { Search1 } from "../../Components/Middle/Content";
+
 import "./Home.css";
 function Home() {
   return (
     <>
-      <div className="content1">
         <LeftNav icon={"home"} />
-      </div>
-      <div className="main">
-        <div className="search-section">
-          <h2 className="search-section-header">
-            Punësim i Garantuar për të Rinjtë
+        <div className="home-content">
+        <div className="first-section">
+          <h1 className="title">WORKWISE</h1>
+         
+          <h2 className="description">
+           The Easiest Way to Get Your New Job
           </h2>
-          <Search1 />
-          <p className="search-section-text">
-            superpuna është platformë punësimi e krijuar nga Qeveria e
-            Republikës së Kosovës, në kuadër të skemës së Punësimit të Garantuar
-            për të Rinjtë, e cila do të lehtësojë qasjen e të rinjve në tregun e
-            punës dhe do të ndihmojë bizneset në angazhimin e punëtorëve të
-            rinj.
-          </p>
+          <h3 className="start-searching">Start searching now <AiOutlineArrowRight /> </h3>
         </div>
-
-        <div className="ofrimi-section">
-          <h2 className="search-section-header">Çfarë ju ofron superpuna? </h2>
-          <p className="search-section-text">
-            superpuna synon garantimin nga Qeveria të një vendi pune për çdo të
-            ri nga 18 deri në 25 vjeç, përmes ndërmjetësimit midis punëdhënësve
-            dhe punëkërkuesve. Pas ndërmjetësimit të suksesshëm, Qeveria bën
-            subvencionimin e pagës mujore të punëtorit, në vlerë prej 264 eurosh
-            për 6 muaj.
+        <h2 className="description">
+           What do we offer?
+          </h2>
+        <div className="second-section">
+          <img src="https://superpuna.rks-gov.net/images/p_1.webp" alt="" className="foto"/>
+          <div className="texti">
+          <h2 className="description-t">
+              JobSeekers
+          </h2>
+          <p>
+          Are you ready to take the next step in your career? Join WorkWise, the ultimate jobseeker's paradise! Unlock endless opportunities, connect with top companies, and showcase your skills to the world. Our user-friendly platform empowers you to search and apply for jobs with ease
           </p>
-        </div>
-
-        <div className="punedhenesi">
-          <img
-            src="https://superpuna.rks-gov.net/images/p_1.webp"
-            alt=""
-            width="600px"
-          />
-          <div className="punedhenesi-texti">
-            <h3>Punëdhënësit:</h3>
-
-            <p>
-              Punëdhënësit mund të jenë nga sektori privat, sektori publik ose
-              organizatat joqeveritare.
-            </p>
-
-            <p>superpuna i ofron punëdhënësve:</p>
-
-            <ul>
-              <li>Mundësi angazhimi për deri në 50 të rinj,</li>
-              <li>Subvencionim të pagës prej 264 euro për 6 muaj,</li>
-              <li>Zhvillim të resurseve njerëzore.</li>
-            </ul>
-
-            <button className="punedhenesi-button">
-              Regjistrohu si punëdhënës
-            </button>
           </div>
         </div>
+
+        <div className="second-section">
+          
+          <div className="texti">
+          <h2 className="description-t">
+              Employers
+          </h2>
+          <p>
+          Are you seeking exceptional talent to drive your company's success? Look no further than WorkWise, your ultimate hiring partner. Our platform offers a seamless and efficient recruitment process, allowing you to reach a pool of qualified candidates and find the perfect fit for your organization.  </p>
+          </div>
+          <img src="https://superpuna.rks-gov.net/images/p_2.webp" alt="" className="foto"/>
+        </div>
+     <div className="footer">
+ 	
+    <div className="row text-center">						
+      <div className="contenti-footer">
+        <div className="footer_menu">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/job-search">Jobs</a></li>
+          </ul>
+        </div>						
+        <div className="footer_copyright">
+          <p>© 2023 WorkWise. All Rights Reserved.</p>
+        </div>	
+        <div className="footer_profile">
+          <ul>
+            <li><a href="#"><i className="fa fa-facebook" /></a></li>
+            <li><a href="#"><i className="fa fa-twitter" /></a></li>
+            <li><a href="#"><i className="fa fa-instagram" /></a></li>
+            <li><a href="#"><i className="fa fa-pinterest" /></a></li>
+          </ul>
+        </div>						
+      </div>{/*- END COL */}							
+    </div>{/*- END ROW */}					
+  </div>{/*- END CONTAINER */}
+
+
+  
       </div>
     </>
   );

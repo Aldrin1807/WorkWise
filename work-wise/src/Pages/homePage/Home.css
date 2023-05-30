@@ -1,60 +1,165 @@
-.content1 {
-  position: fixed;
+.home-content{
+  background-color: white;
+  width: 88%;
+  height: 100%;
+  margin-top: 25px;
+  border-radius: 25px;
+  margin-right: 2rem;
+  
+}
+.title{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #0F3F62;
+}
+.description{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #0F3F62;
+}
+.start-searching{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #0F3F62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.first-section {
+  padding: 70px 27vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  background: url('../../assets/h1_hero.jpg');
+  background-position: center;
+ border-radius: 25px;
+  height: 43.1rem;
 }
 
-.search-section {
-  padding: 70px 27vw;
-  display: grid;
-  place-items: center;
-  background-color: #96c3d2;
-}
 
 .search-section-text {
   text-align: center;
   font-size: 20px;
-  color: white;
+ 
 }
 
-.search-section-header {
-  font-size: 47px;
-  color: white;
+
+.second-section{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.texti{
+  width: 50rem;
+}
+.foto{
+  width: 35rem;
 }
 
-.ofrimi-section {
-  display: grid;
-  place-items: center;
-  background-image: url(https://superpuna.rks-gov.net/images/hero.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 80px 22vh;
+.texti h2{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #0F3F62;
+}
+.texti p{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: gray;
 }
 
-.punedhenesi {
-  padding: 80px 150px;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
+.footer {
+  background:#232a34;
+padding-top: 50px;
+border-bottom-left-radius:25px ;
+border-bottom-right-radius:25px ;
 }
-
-.punedhenesi-texti {
-  display: grid;
-  font-size: 20px;
-  gap: 1rem;
-  margin-left: 20px;
+.footer_menu {
+margin-bottom: 20px;
 }
+.footer_menu ul {
+list-style: none;
+text-align: center;
 
-.punedhenesi h3 {
-  margin: 0;
-  font-size: 30px;
 }
+.footer_menu ul li{display: inline-block;}
+.footer_menu ul li a {
+color:#fff;
+padding: 0 10px;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+}
+.footer_menu ul li a:hover{color:#554c86;}
 
-.punedhenesi-button {
-  width: 300px;
-  font-size: 16px;
-  padding: 15px;
-  background-color: #2871c5;
-  border-color: none;
-  border-width: 0px;
-  border-radius: 5px;
-  color: white;
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile{margin-bottom:40px;}
+.footer_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.footer_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.footer_profile ul li{margin:2px;}
+}
+.footer_profile ul li a img{width:60px;}
+
+.footer_profile ul li a {
+background: #554c86;
+width: 40px;
+height: 40px;
+display: block;
+text-align: center;
+margin-right: 5px;
+border-radius: 50%;
+line-height: 40px;
+box-sizing: border-box;
+text-decoration: none;
+-webkit-transition: .3s;
+transition: .3s;
+color: #fff;
+
+}
+.footer_copyright {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.contenti-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
