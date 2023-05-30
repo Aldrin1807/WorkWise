@@ -109,4 +109,3 @@ export default function LeftNav(props:any){
       </div>
     );
 }
-export default LeftNav;
